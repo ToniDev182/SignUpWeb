@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    background-image: url("/assets/Fondo_Negro_4.webp"); /*estabece una imagen de fondo*/
+    background-size: cover; /*asegura que la imagen cubra to el fondo*/
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex; /*centra el contenido*/
+    justify-content: center; /*Centra horizontalmente los elementos hijos*/
+    align-items: center; /* Centra verticalmente los elementos hijos*/
+    height: 100vh; /*Modifica la altuara*/
+    margin: 0;
+}
+
+/* Estilos del formulario */
+form {
+    background-color: rgba(97, 92, 92, 0.24); /*Color de fondo del formulario*/
+    padding: 20px; /* Espacio interno del formulario */
+    border-radius: 8px; /*Bordes redondeados*/
+    box-shadow: 0 4px 8px rgba(211, 203, 203, 0.1); /*Sombra del formulario*/
+    max-width: 400px; /*ancho del formulario*/
+    width: 100%; /*el formulario ocupará el 100% del ancho disponible*/
+}
+
+/* Título del formulario */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block; /*centra el texto*/
+    color: #bdb4b4; /*color del texto*/
+    margin-bottom: 5px; /*Espacio interior*/
+    font-size: 0.9rem; /*Tamaño de la fuente*/
+}
+
+/* Estilos para los inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%; /*Los campos de entrada ocuparan todo el ancho disponible */
+    padding: 10px; /* Espaciado interno en los campos de entrada */
+    margin-bottom: 15px; /* Espaciado inferior entre campos */
+    border: 1px solid #ccc; /* Borde alrededor de los campos de entrada */
+    border-radius: 5px; /* Bordes redondeados para los campos de entrada */
+    font-size: 0.9rem; /* Tamaño de la fuente en los campos de entrada */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilo del checkbox */
+input[type="checkbox"] {
+    margin-right: 10px; /* Espaciado a la derecha del checkbox */
+}
+
+/* Botón de envío */
+button {
+    width: 100%; /* El botón ocupará el 100% del ancho disponible */
+    padding: 10px; /* Espaciado interno en el botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    font-size: 1rem; /* Tamaño de la fuente en el botón */
+    cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+}
+
+/* Cambia el color del botón al pasar el mouse */
+button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Responsive design */
+@media (max-width: 600px) { /* Media query para dispositivos con un ancho máximo de 600px */
+    form {
+        padding: 15px; /* Reduce el espaciado interno del formulario */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Reduce el tamaño de la fuente del título */
+    }
+
+    input,
+    select,
+    button {
+        font-size: 0.8rem; /* Reduce el tamaño de la fuente de los inputs, select y botón */
+    }
+}

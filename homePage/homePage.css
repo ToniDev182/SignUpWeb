@@ -1,0 +1,43 @@
+body {
+    background-image: url("../assets/Fondo_Negro_4.webp"); /*estabece una imagen de fondo*/
+    background-size: cover; /*asegura que la imagen cubra to el fondo*/
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.confirmacion {
+    background-color: rgba(97, 92, 92, 0.24); /*Color de fondo del formulario*/
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(211, 203, 203, 0.1); /*Sombra del formulario*/
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
